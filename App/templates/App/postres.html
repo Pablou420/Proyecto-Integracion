@@ -1,0 +1,42 @@
+{% extends "./index.html" %}
+{% load static %}
+
+{% block title %} Postres {% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="col">
+        <div class="row mt-5">
+            <div class="card h-100" style="width: 18rem;">
+                <img src="{% static 'media/1684846876915.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tiramisú</h5>
+                    <p class="card-text">Torta de Tiramisú para chuparse los dedos</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card h-100" style="width: 18rem;">
+                <img src="{% static 'media/pancakes-14.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Panqueques</h5>
+                    <p class="card-text">Deliciosos Panqueques con una bola de helado y sirope</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card h-100" style="width: 18rem;">
+                <img src="{% static 'media/tarta-tres-chocolates.webp' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Torta 3 chocolates</h5>
+                    <p class="card-text">Exquisita torta de 3 chocolates</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

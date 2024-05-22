@@ -1,0 +1,42 @@
+{% extends "./index.html" %}
+{% load static %}
+
+{% block title %} Entradas {% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="col">
+        <div class="row mt-5">
+            <div class="card h-100" style="width: 18rem;">
+                <img src="{% static 'media/comida-vegana.webp' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ensalada Vegana</h5>
+                    <p class="card-text">Ensalada vegana con hamburguesa de tofu, espinaca y verduras varias</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card h-100" style="width: 18rem;">
+                <img src="{% static 'media/espaguetis-a-la-bolonesa.webp' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Spaguettis a la Bolognesa</h5>
+                    <p class="card-text">Fina pasta hecha en casa con salsa a la bolognesa</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card h-100" style="width: 18rem;">
+                <img src="{% static 'media/sopa-champinones-1920.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Crema de Champiñones</h5>
+                    <p class="card-text">Exquisita crema de champiñones casera</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

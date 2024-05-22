@@ -1,0 +1,110 @@
+/* Estilos para el encabezado */
+nav {
+    margin-bottom: 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  /* Estilos para el contenido principal */
+  h1 {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  
+nav {
+	background-color: #b96d36; /* Fondo crema */
+}
+
+
+body {
+    background-color: #db4747;
+  }
+  
+  h1 {
+    color: #000000;
+  }
+body {
+    background-color: #f7d3d3;
+  }
+  
+  h1 {
+    color: #000000;
+  }
+  
+  .cart {
+    margin-left: auto;
+  }
+  
+  .card {
+    border: none;
+  }
+  
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .add-to-cart {
+    width: 100%;
+  }
+footer {
+    background: linear-gradient(45deg, #ff7f7f, #ff66cc);
+    padding: 40px 0;
+  }
+  
+  .containerfooter {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    width: 45%;
+    margin-right: 5%;
+  }
+  
+  .column:last-of-type {
+    margin-right: 0;
+  }
+  
+  .column h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .column ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .column ul li i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
