@@ -11,54 +11,57 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
     <link type="text/css" rel="stylesheet" href="{% static 'css/app.css' %}">
     <title>{% block title %} Inicio {% endblock %}</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/inicio">Sabor Académico</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/entrantes">Entradas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/platos">Platos de Fondo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/postres">Postres</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/acompañantes">Acompañantes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/carrito">Carro</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    {% block content%}
 
-    {% endblock %}
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-</body>
-<footer>
-    <div>
-    <script src="http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={207d3a2835f68a8049d3755ea134bc9c}"></script>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/inicio">Sabor Académico</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/entrantes">Entradas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/platos">Platos de Fondo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/postres">Postres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/acompañantes">Acompañantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/carrito">Carro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/mapa">Mapa</a>
+                </li>
+            </ul>
+        </div>
     </div>
+</nav>
+{% block content%}
+
+{% endblock %}
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3moumbeXfhLLKhhqoCxxA4t9aPxzbyNM&map_ids=1697707868d02e57&callback=initMap">
+    </script>
+<footer>
     <div class="containerfooter">
         <div class="contact-info">
             <div class="column">
@@ -80,4 +83,5 @@
         </div>
     </div>
 </footer>
+
 </html>

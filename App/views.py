@@ -1,3 +1,4 @@
+import requests
 from django.shortcuts import render
 
 # Create your views here.
@@ -22,3 +23,6 @@ def acompañantes(request):
 
 def carrito(request):
     return render(request, 'App/carrito.html',{})
+
+def mapa(request):
+    return render(request, 'App/mapa.html')
