@@ -9,33 +9,36 @@
 <div class="container dropup-center">
   <form class="row">
     <div class="col-md-5">
-      <label for="inputEmail4" class="form-label">Nombre de titular</label>
-      <input type="email" class="form-control" id="inputEmail4">
+      <label for="inputNombre" class="form-label">Nombre de titular</label>
+      <input type="text" class="form-control" id="inputNombre">
     </div>
     <div class="col-md-5">
-      <label for="inputP    assword4" class="form-label">Apellido (opcional)</label>
-      <input type="password" class="form-control" id="inputPassword4">
+      <label for="inputApellido" class="form-label">Apellido</label>
+      <input type="text" class="form-control" id="inputApellido">
     </div>
     <div class="col-md-5">
-      <label for="inputZip" class="form-label"> Correo</label>
-      <input type="text" class="form-control" id="inputZip">
+      <label for="inputCorreo" class="form-label"> Correo</label>
+      <input type="email" class="form-control" id="inputCorreo">
     </div>
     <div class="col-md-3 ">
-      <label for="inputAddress" class="form-label">N° de tarjeta</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="1111 1111 1111 1111">
+      <label for="inputTarjeta" class="form-label">N° de tarjeta</label>
+      <input oninput="inputTarjeta()" maxlength="12" type="text" class="form-control" id="inputTarjeta" placeholder="1111 1111 1111 1111">
     </div>
     <div class="col-2">
-      <label for="inputAddress2" class="form-label">Fecha de Vencimiento</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="00/00">
+      <label for="inputFecha" class="form-label">Fecha de Vencimiento</label>
+      <input type="text" class="form-control" id="inputFecha" placeholder="00/00">
     </div>
     <div class="col-md-2">
-      <label for="inputCity" class="form-label">N° verificador</label>
-      <input type="text" class="form-control" id="inputCity" placeholder="111">
+      <label for="inputVerificador" class="form-label">N° verificador</label>
+      <input maxlength="3" type="text" class="form-control" id="inputVerificador" placeholder="111">
+      <br>
     </div>
 
     <div class="col-12">
-      <button type="submit" class="btn btn-primary">Pagar</button>
+      <button onclick="alert ('Pago Concretado')" type="submit" class="btn btn-primary">Pagar</button>
+      
     </div>
+    <br>
   </form>
 
 </div>
@@ -44,5 +47,6 @@
   integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
   integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="{% static 'js/script.js' %}"></script>
 
 {% endblock %}
