@@ -41,16 +41,6 @@ body {
   .cart {
     margin-left: auto;
   }
-  
-  .card {
-    border: none;
-  }
-  
-  .card-img-top {
-    height: 250px;
-    object-fit: cover;
-  }
-  
   .add-to-cart {
     width: 100%;
   }
