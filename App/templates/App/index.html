@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
     <link type="text/css" rel="stylesheet" href="{% static 'css/app.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/footer.css' %}">
     <title>{% block title %} Inicio {% endblock %}</title>
 </head>
 
@@ -46,6 +47,8 @@
                 </li>
             </ul>
         </div>
+        <a class="navbar-brand" href="/iniciosesion">Inicio Sesion</a>
+        <a class="navbar-brand" href="/registro">Registrarse</a>
     </div>
 </nav>
 {% block content%}

@@ -24,5 +24,11 @@ def acompañantes(request):
 def carrito(request):
     return render(request, 'App/carrito.html',{})
 
+def iniciosesion(request):
+    return render(request, 'App/iniciosesion.html', {})
+
+def registro(request):
+    return render(request, 'App/registro.html', {})
+
 def mapa(request):
-    return render(request, 'App/mapa.html')
+    return render(request, 'App/mapa.html', {})

@@ -26,7 +26,7 @@
     </div>
     <div class="col-2">
       <label for="inputFecha" class="form-label">Fecha de Vencimiento</label>
-      <input type="text" class="form-control" id="inputFecha" placeholder="00/00">
+      <input type="text" class="form-control" maxlength="4" id="inputFecha" placeholder="00/00">
     </div>
     <div class="col-md-2">
       <label for="inputVerificador" class="form-label">N° verificador</label>
@@ -35,9 +35,8 @@
     </div>
 
     <div class="col-12">
-      <button onclick="alert ('Pago Concretado')" type="submit" class="btn btn-primary">Pagar</button>
-      
-    </div>
+      <a onclick="alert ('Pago Concretado')" class="btn btn-primary" href="/inicio" role="button">Pagar</a>
+  </div>
     <br>
   </form>
 
